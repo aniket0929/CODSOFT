@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.header {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 400px; /* Increased container size */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+.calc-text {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80px; /* Increased height for better display */
+    padding: 15px;
+    background-color: #222;
+    color: white;
+    font-size: 3em; /* Increased font size */
+    text-transform: uppercase; /* Make text uppercase */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.calc-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+}
+
+button {
+    border: none;
+    padding: 25px; /* Increased padding */
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.key-zero {
+    grid-column: span 2;
+}
+
+.key-operate {
+    background-color: #f4a261;
+    color: white;
+}
+
+.key-operate:hover {
+    background-color: #e76f51;
+}
+
+.key-others {
+    background-color: #2a9d8f;
+    color: white;
+}
+
+.key-others:hover {
+    background-color: #264653;
+}
+
+.numbers {
+    background-color: #e9c46a;
+}
+
+.numbers:hover {
+    background-color: #f1faee;
+}
